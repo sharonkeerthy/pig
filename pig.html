@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+
+  .pig-face {
+    width: 200px;
+    height: 200px;
+    background-color: #ffb6c1;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ear {
+    width: 60px;
+    height: 100px;
+    background-color: #ffb6c1;
+    border-radius: 50%;
+    position: absolute;
+    top: 40px;
+  }
+
+  .ear.left {
+    left: -40px;
+    transform: rotate(20deg);
+  }
+
+  .ear.right {
+    right: -40px;
+    transform: rotate(-20deg);
+  }
+
+  .eye {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 90px;
+  }
+
+  .eye.left {
+    left: 65px;
+  }
+
+  .eye.right {
+    right: 65px;
+  }
+
+  .pupil {
+    width: 12px;
+    height: 12px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .nose {
+    width: 18px;
+    height: 18px;
+    background-color: pink;
+    border-radius: 50%;
+    position: absolute;
+    top: 110px;
+    left: 91px;
+  }
+
+  .nostril {
+    width: 5px;
+    height: 5px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .nostril.left {
+    left: 4px;
+  }
+
+  .nostril.right {
+    right: 4px;
+  }
+
+  .mouth {
+    width: 60px;
+    height: 30px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border: 2px solid black;
+    position: absolute;
+    top: 130px;
+    left: 70px;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+
+  .tongue {
+    width: 45px;
+    height: 60px;
+    background-color: #ff99aa;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -10px;
+    left: 7.5px;
+  }
+</style>
+<title>Pig Face</title>
+</head>
+<body>
+  <div class="pig-face">
+    <div class="ear left"></div>
+    <div class="ear right"></div>
+    <div class="eye left">
+      <div class="pupil"></div>
+    </div>
+    <div class="eye right">
+      <div class="pupil"></div>
+    </div>
+    <div class="nose">
+      <div class="nostril left"></div>
+      <div class="nostril right"></div>
+    </div>
+    <div class="mouth">
+      <div class="tongue"></div>
+    </div>
+  </div>
+</body>
+</html>
+
